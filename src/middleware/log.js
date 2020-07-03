@@ -1,5 +1,5 @@
 const loggingMiddleware = (req, res, next) => {
-    const baseUrl = req.url.replace('http://localhost:3000', '')
+    const baseUrl = req.url.replace('https://nikita-task-manager.herokuapp.com/', '')
     console.log(`${req.method}  ${baseUrl}`)
     next()
 }
