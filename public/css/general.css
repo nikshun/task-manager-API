@@ -1,0 +1,170 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.95em;
+}
+
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 93%;
+    /* 90% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    top: 7%;
+    /* Stay at the top */
+    left: 0;
+    background-color: #f3f3f3;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.3s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    border: 1px solid #e7e7e7c4;
+    border-top: none;
+    ;
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: indianred;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#top-nav {
+    /* position: sticky; */
+    top: 0;
+    width: 100%;
+    height: 7%;
+    background-color: #f3f3f3;
+    border: 1px solid #e7e7e7c4;
+    border-right: none;
+    border-left: none;
+    /* box-shadow: 6px 0px 8px -3px rgba(0, 0, 0, 0.15); */
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.nav-icon:hover {
+    background-color: rgba(17, 17, 17, 0.26);
+    color: white;
+    border-radius: 4px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li:first-child {
+    margin-left: 35px;
+}
+
+li {
+    border-radius: 4px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 6px;
+}
+
+li a {
+    display: block;
+    color: midnightblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#findbox {
+    width: 180px;
+    border: 2px solid #e7e7e7c4;
+    height: 26px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    background: #fff;
+    font-size: 1.2em;
+}
+
+#search-img {
+    float: left;
+    margin-top: 4px;
+    height: 18px;
+}
+
+#search-txt {
+    width: 150px;
+    padding-top: 3px;
+    font-size: 0.9em;
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
