@@ -113,30 +113,23 @@ body {
     border-radius: 4px;
 }
 
-ul {
+#left-side-span {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li:first-child {
-    margin-left: 35px;
-}
-
-li {
-    border-radius: 4px;
+.left-side-a {
     float: left;
+    border-radius: 4px;
     margin-left: 5px;
     margin-top: 6px;
+    text-decoration: none;
 }
 
-li a {
-    display: block;
-    color: midnightblue;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.left-side-a:first-child {
+    margin-left: 35px;
 }
 
 #findbox {
@@ -167,4 +160,24 @@ li a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#right-side-span {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.right-side-a:first-child {
+    margin-right: 35px;
+}
+
+.right-side-a {
+    float: right;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-top: 6px;
+    text-decoration: none;
 }
