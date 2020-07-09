@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #45caff;
+}
+
+#logo-box h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 210%;
+    float: right;
+    margin-top: 10px;
+    margin-right: 65px;
+}
+
+#logo-box h4 {
+    font-family: 'Ubuntu', sans-serif;
+    float: right;
+    margin-top: -55px;
+    margin-right: 112px;
+    color: #3ac7ff;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+#form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 4% auto;
+    background: white;
+    padding: 5px;
+    overflow: hidden;
+    border: 1px solid rgb(202, 202, 202, 0.5);
+    border-radius: 20px;
+    box-shadow: 0px 3px 35px 15px rgba(0, 0, 0, 0.19);
+}
+
+#button-box {
+    width: 200px;
+    margin: 15px auto;
+    margin-bottom: 30px;
+    position: relative;
+    box-shadow: 0 0 20px 5px rgb(94, 217, 255, 0.5);
+    border-bottom: 1px solid rgb(94, 217, 255);
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 12px 20px;
+    padding-left: 20px;
+    font-size: 110%;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    transition: all 0.5s ease-out;
+}
+
+.toggle-btn:last-child {
+    float: right;
+    padding-right: 15px;
+    transition: all 0.3s ease-out;
+}
+
+.toggle-btn:hover {
+    border-radius: 30px;
+    box-shadow: 0px 3px 7px 0px rgba(103, 212, 255, 0.8);
+    transition: all 0.5s ease-out;
+}
+
+#btn {
+    background: linear-gradient(to right, rgb(145, 215, 255), rgb(13, 207, 255), rgb(144, 220, 255));
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 0px 3px 7px 0px rgba(103, 212, 255, 0.4);
+    transition: all 0.3s ease-out;
+}
+
+#login-btn {
+    color: white;
+}
+
+.input-group {
+    position: absolute;
+    top: 200px;
+    width: 280px;
+    transition: 0.5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 3px;
+    font-size: 105%;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgb(106, 225, 255);
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+    background: rgb(238, 238, 238);
+}
+
+.submit-btn-box {
+    cursor: pointer;
+    padding: 10px 30px;
+    color: white;
+    width: 45%;
+    margin: auto;
+    margin-top: 30px;
+    background: linear-gradient(to right, rgb(145, 215, 255), rgb(13, 207, 255), rgb(144, 220, 255));
+    border-radius: 15px;
+    border-bottom: 3px solid rgb(13, 207, 255);
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, .5);
+    transition: all 0.1s ease-out;
+}
+
+.submit-btn-box:hover {
+    transition: all 0.1s ease-out;
+    margin-top: 33px;
+    border-bottom: 2px solid rgb(13, 207, 255);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, .5);
+}
+
+.submit-btn {
+    font-size: 120%;
+    color: transparent;
+    background-color: #cc8100;
+    background-clip: text;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    border-bottom: 4px solid linear-gradient(to right, rgb(106, 225, 255), rgb(112, 250, 255));
+    background: transparent;
+    color: white;
+}
+
+.remember-me {
+    color: #777;
+    font-size: 15px;
+}
+
+#login {
+    left: 50px;
+}
+
+#signup {
+    left: 450px;
+}

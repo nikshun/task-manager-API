@@ -3,8 +3,8 @@ const router = new express.Router()
 const auth = require('../middleware/auth')
 const hbs = require('hbs')
 
-router.get('', (req, res) => {
-    res.render('home')
+router.get('', auth, async(req, res) => {
+    await res.render('home')
 })
 
 module.exports = router
