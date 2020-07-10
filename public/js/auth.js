@@ -26,7 +26,8 @@ const button = document.getElementById('submit-login');
 
 button.addEventListener('click', () => {
     const data = {
-        "email": "niknm@nm.com",
+        "name": "TAEst",
+        "email": "niknm2@nm.com",
         "password": "nikniknik"
     };
     try {
