@@ -33,7 +33,7 @@
             {{!-- <input type="text" class="input-field" placeholder="Email(optional)"> --}}
             <input type="password" class="input-field" placeholder="Password" required>
             <div class="submit-btn-box">
-                <button type="submit" class="submit-btn">Log In</button>
+                <button id="submit-login" class="submit-btn">Log In</button>
             </div>
         </form>
 
@@ -47,29 +47,7 @@
         </form>
     </div>
 
-    <script>
-        var loginBtn = document.getElementById("login");
-        var signupBtn = document.getElementById("signup");
-        var btn = document.getElementById("btn");
-        var loginbtn = document.getElementById("login-btn");
-        var signupbtn = document.getElementById("signup-btn");
-        
-        function signup() {
-            loginBtn.style.left = "-400px"
-            signupBtn.style.left = "50px"
-            btn.style.left = "100px"
-            signupbtn.style.color = "white"
-            loginbtn.style.color = "black"
-        }
-
-        function login() {
-            loginBtn.style.left = "50px"
-            signupBtn.style.left = "450px"
-            btn.style.left = "0px"
-            loginbtn.style.color = "white"
-            signupbtn.style.color = "black"
-        }
-    </script>
+    <script src="/js/auth.js"></script>
 </body>
 
 </html>
