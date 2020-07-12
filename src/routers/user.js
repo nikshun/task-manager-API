@@ -4,6 +4,7 @@ const User = require('../models/user')
 const auth = require('../middleware/auth')
 const multer = require('multer')
 const sharp = require('sharp')
+const jwt = require('jsonwebtoken')
 
 router.post('/users', async(req, res) => {
     console.log("Created a user " + req.body.email + " with password of " + req.body.password)
@@ -20,9 +21,11 @@ router.post('/users', async(req, res) => {
 router.post('/users/login', async(req, res) => {
     try {
         console.log("User " + req.body.email + " attempted to login with password of " + req.body.password)
-            // console.log(req.body)
+        console.log(req.body)
         const user = await User.findByCredentials(req.body.email, req.body.password)
+
         const token = await user.generateAuthToken()
+
         res.status(200).send({ user, token })
     } catch (e) {
         res.status(400).send(e)
